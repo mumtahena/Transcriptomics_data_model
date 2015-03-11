@@ -59,7 +59,7 @@
                 </xs:element>
                 <xs:element name="test">
                     <xs:complexType>
-                        <xs:sequence>
+                        <xs:all>
                             <xs:element name="platform">
                                 <xs:complexType>
                                     <xs:all>
@@ -178,8 +178,8 @@
                                     </xs:choice>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="note" type="xs:string"/>
-                        </xs:sequence>
+                            <xs:element name="note" type="xs:string" minOccurs="0"/>
+                        </xs:all>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
