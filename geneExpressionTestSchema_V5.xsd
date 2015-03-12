@@ -74,7 +74,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="analysis">
+                            <xs:element name="analysis" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element default="Absolute" name="typeOfAnalysis">
@@ -84,8 +84,9 @@
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
-                                        <xs:element name="rawDataReference" type="xs:anyURI"/>
-                                        <xs:element name="analysisMethod">
+                                        <xs:element name="rawDataReference" type="xs:anyURI"
+                                            minOccurs="0"/>
+                                        <xs:element name="analysisMethod" minOccurs="1">
                                             <xs:complexType>
                                                 <xs:choice>
                                                   <xs:element minOccurs="0" name="analysisPipeline">
@@ -149,7 +150,7 @@
                                                   <xs:element minOccurs="0" name="HGNCID"
                                                   type="xs:nonNegativeInteger"/>
                                                   <xs:element minOccurs="0" name="ENTREZID"
-                                                  type="xs:int"/>
+                                                  type="xs:nonNegativeInteger"/>
                                                   <xs:element minOccurs="0" name="ENSEMBLID"
                                                   type="xs:string"> </xs:element>
                                                   </xs:all>
@@ -173,7 +174,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="note" type="xs:string"/>
+                            <xs:element name="note" type="xs:string" minOccurs="0"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
