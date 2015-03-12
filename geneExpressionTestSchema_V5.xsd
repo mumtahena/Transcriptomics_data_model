@@ -46,7 +46,7 @@
                 <xs:element minOccurs="0" name="relevantDiagnosis" type="xs:string"/>
                 <xs:element name="sample">
                     <xs:complexType>
-                        <xs:all>
+                        <xs:sequence>
                             <xs:element name="anatomicLocation" type="xs:string"/>
                             <xs:element name="analyte" type="xs:string"/>
                             <xs:element name="samplingDateTime" type="xs:dateTime"/>
@@ -58,7 +58,7 @@
                                 </xs:simpleType>
                             </xs:element>
                             <xs:element minOccurs="0" name="notes" type="xs:string"/>
-                        </xs:all>
+                        </xs:sequence>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="test">
@@ -76,7 +76,7 @@
                             </xs:element>
                             <xs:element name="analysis">
                                 <xs:complexType>
-                                    <xs:all>
+                                    <xs:sequence>
                                         <xs:element default="Absolute" name="typeOfAnalysis">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:string">
@@ -132,7 +132,7 @@
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="analysisDateTime" type="xs:dateTime"/>
-                                    </xs:all>
+                                    </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="results">
