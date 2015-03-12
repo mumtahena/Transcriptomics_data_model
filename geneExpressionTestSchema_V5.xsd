@@ -74,7 +74,7 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="analysis" maxOccurs="unbounded">
+                            <xs:element name="analysis" maxOccurs="1">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element default="Absolute" name="typeOfAnalysis">
