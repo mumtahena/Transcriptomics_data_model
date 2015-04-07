@@ -12,3 +12,4 @@ bin-release/
 update_git
 ommit_git
 Archives
+.gitignore
