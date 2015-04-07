@@ -96,13 +96,13 @@
                   <xs:attribute name="valueType" fixed="DV_TEXT" />
                 </xs:complexType>
               </xs:element>
-              <xs:element name="Status" minOccurs="0">
+              <xs:element name="Report_Status" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="name">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="value" type="xs:string" default="Status" />
+                          <xs:element name="value" type="xs:string" fixed="Report Status" />
                           <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
                           <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
                         </xs:sequence>
@@ -10868,13 +10868,13 @@
                                                   <xs:attribute name="valueType" fixed="DV_CODED_TEXT" />
                                                 </xs:complexType>
                                               </xs:element>
-                                              <xs:element name="Raw_Data_Reference" minOccurs="0">
+                                              <xs:element name="Raw_Data_Referece" minOccurs="0">
                                                 <xs:complexType>
                                                   <xs:sequence>
                                                     <xs:element name="name">
                                                       <xs:complexType>
                                                         <xs:sequence>
-                                                          <xs:element name="value" type="xs:string" default="Raw Data Reference" />
+                                                          <xs:element name="value" type="xs:string" default="Raw Data Referece" />
                                                           <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
                                                           <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
                                                         </xs:sequence>
@@ -11598,13 +11598,13 @@
                                                   <xs:attribute name="valueType" fixed="DV_CODED_TEXT" />
                                                 </xs:complexType>
                                               </xs:element>
-                                              <xs:element name="Raw_Data_Reference" minOccurs="0">
+                                              <xs:element name="Raw_Data_Referece" minOccurs="0">
                                                 <xs:complexType>
                                                   <xs:sequence>
                                                     <xs:element name="name">
                                                       <xs:complexType>
                                                         <xs:sequence>
-                                                          <xs:element name="value" type="xs:string" default="Raw Data Reference" />
+                                                          <xs:element name="value" type="xs:string" default="Raw Data Referece" />
                                                           <xs:element name="mappings" type="oe:TERM_MAPPING" minOccurs="0" maxOccurs="unbounded" />
                                                           <xs:element name="defining_code" type="oe:CODE_PHRASE" minOccurs="0" />
                                                         </xs:sequence>
@@ -12920,7 +12920,7 @@
       </xs:sequence>
       <xs:attribute fixed="openEHR-EHR-COMPOSITION.report-result.v1" name="archetype_node_id" type="oe:archetypeNodeId" />
       <xs:attribute fixed="COMPOSITION" name="type" />
-      <xs:attribute fixed="Gene Expression Lab Report_Template._V2" name="template_id" use="required" />
+      <xs:attribute fixed="Gene Expression Lab Report_Template_v7" name="template_id" use="required" />
     </xs:complexType>
   </xs:element>
 </xs:schema>

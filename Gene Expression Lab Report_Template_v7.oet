@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>ccdcbc53-d20a-45bf-80f5-31999958fbe2</id>
+  <id>6b01b059-cc85-4595-94c7-b5f5ebf7520f</id>
   <name>Gene Expression Lab Report</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
       <purpose>To document and communicate gene expression test results and analysis</purpose>
       <use>To document and communicate gene expression test results and analysis</use>
-      <misuse />
+      <misuse>This report only one patient gene expression lab result not for multiple patients</misuse>
     </details>
     <other_details>
       <item>
@@ -125,6 +125,7 @@
           <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.person_name.v1" concept_name="Person name" path="/items[at0005 and name/value='Contact Person Details']/items[at0010]" />
         </Items>
       </Items>
+      <Rule path="/context/other_context[at0001]/items[at0005]" name="Report Status" />
     </Context>
   </definition>
 </template>
