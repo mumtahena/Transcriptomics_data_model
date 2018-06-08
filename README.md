@@ -26,4 +26,4 @@ This repository includes an XSD model for representing transcriptomics data to r
 
 # Contacts
 For any questions, please email
-Mumtahena Rahman [moom.rahman@utah.edu] 
+Moom Rahman Roosan [roosan@chapman.edu] 
